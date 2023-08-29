@@ -5,41 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/style/normalize.css" />
-
-    <style>
-      .container {
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-          "header header"
-          "article aside"
-          "footer footer";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 5fr 1fr;
-      }
-
-      .header {
-        background-color: brown;
-        grid-column: 1/6;
-      }
-      .article {
-        background-color: blue;
-      }
-      .aside {
-        background-color: yellow;
-      }
-      .footer {
-        background-color: chocolate;
-        grid-column: 1/6;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body class="body">
     <div class="container">
-      <header class="header">Header</header>
-      <article class="article">Article</article>
-      <aside class="aside">Aside</aside>
-      <footer class="footer">Footer</footer>
+      <header class="header">
+        <div class="headertext">[Шапка страницы]</div>
+      </header>
+
+      <article class="article">
+        <div class="block block-1">
+          <div class="articletext">[Основная часть]</div>
+        </div>
+
+        <div class="smallcontainer">
+          <div class="block block-2"><div class="smalltext">[Ещё 1]</div></div>
+          <div class="block block-3"><div class="smalltext">[Ещё 2]</div></div>
+        </div>
+
+        <div class="block block-4"><div class="smalltext">[Ещё 3]</div></div>
+      </article>
+
+      <aside class="aside">
+        <div class="asidetext">[Боковая область]</div>
+      </aside>
+      <footer class="footer">
+        <section class="sectionfooter">
+          <div class="footertext">[Секция футера 1]</div>
+        </section>
+        <section class="sectionfooter">
+          <div class="footertext">[Секция футера 2]</div>
+        </section>
+        <section class="sectionfooter">
+          <div class="footertext">[Секция футера 3]</div>
+        </section>
+        <section class="sectionfooter">
+          <div class="footertext">[Секция футера 4]</div>
+        </section>
+      </footer>
     </div>
   </body>
 </html>

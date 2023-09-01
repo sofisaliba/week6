@@ -8,7 +8,7 @@
 
     <style>
      .body{
-        width: 100%;
+       width: 100%;
   background-color: #1b3b36;
   display: grid;
      }
@@ -41,14 +41,14 @@
 
       .herotext {
         display: grid;
-        grid-template-columns: 3fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin-top: 50px;
       }
       .bank,
       .hotel {
-        grid-column: 1/2;
-        grid-row: 1/3;
+        grid-column: 1/3;
+        grid-row: 1/2;
         font-size: 200px;
       }
       .bank {
@@ -81,11 +81,15 @@
         grid-row: 1/2;
         color: #fffcf6;
         font-size: 22px;
-        
-      }
-      .rectangle{
-        grid-column: 2/3;
-        grid-row: 1/2;
+        border-radius: 50px 50px 50px 50px;
+        border: 1px solid #fffcf6;
+        width: 249px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 70px;
       }
       .luxurious {
         grid-row: 2/3;
@@ -94,10 +98,15 @@
         font-size: 18px;
         width: 350px;
         height: 84px;
+        margin-left: 300px;
       }
       .button {
-        grid-column: 3/4;
+        grid-column: 4/5;
         grid-row: 1/2;
+        margin-top: 70px;
+        width: 70px;
+        height: 70px;
+        
       }
       .labels{
         display: grid;
@@ -142,6 +151,17 @@
         margin-left: 155px;
         text-transform: uppercase;
       }
+      .formimage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        position: relative;
+      }
+      .form{
+        grid-column: 3/4;
+      }
+      .heroimage{
+        grid-column: 1/4;
+      }
     </style>
   </head>
   <body class="body">
@@ -173,26 +193,27 @@
         <div class="choose">
           rooms // restaurant // congress hall // wine bar
         </div>
-        <div class="rectangle" style="width: 249; height: 79px"><img src="assets/imgs/Rectangle 125.png" alt="rectangle" />
           <div class="since">
-          <img src="assets/imgs/Star 8.png" alt="star" style="width: 34px; height: 34px"/>
-          since 1973
+          <div><img src="assets/imgs/Star 8.png" alt="star" style="width: 34px; height: 34px"/></div>
+          <div style="width: 111px; height: 26px;">Since 1973</div>
         </div>
-      </div>
+     
       <div class="luxurious">
         The luxurious hotel in the most beautiful European city with an
         exclusive restaurant, conference-hall, and art-bar.
       </div>
-      <div class="button"><button>Button</button></div>
+      <div class="button"><button><img src="assets/imgs/button - default.png" alt="button" style="width: 70px; height: 70px; background-color: #1b3b36; position: absolute; object-fit: cover;"></button></div>
       </div>
       <!--Закончилась вторая часть первого контейнера heroscreen с текстом-->
 
       <!--Начало третей части с картинкой-->
       
-      <div class="heroimage" style="width: 100%;">
-        <div><!--Тут будет форма выбора заказа--></div>
       
-      <div><img src="assets/imgs/img.png" alt="room" style="width: 1860px; height: 781px; margin-left: 20px; margin-right: 20px;"></div>
+      
+      <div class="formimage" style="background-image: url(assets/imgs/img.png); height: 781px; width: 1860px; margin-left: 20px; margin-right: 20px;">
+        <div class="form"><img src="assets/imgs/form.png" alt="form" style="margin-left: 20px;"></div>
+        
+    </div>
     </div>
       <!--Конец третей части с картинкой-->
 

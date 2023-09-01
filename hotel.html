@@ -220,6 +220,101 @@
       .buttonabout {
         grid-column: 3/4;
         grid-row: 2/3;
+        width: 200px;
+        height: 200px;
+        margin-left: 15px;
+        margin-top: 230px;
+      }
+
+      .room{
+        background-color: #fffcf6;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .roomstext{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        width: 1036px;
+        height: 260px;
+        font-size: 150px;
+        margin-top: 150px;
+        margin-left: 20px;
+        color: #1b3b36;
+      }
+      .roomtext{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 260px;
+        height: 93px;
+        font-size: 26px;
+        margin-left: 470px;
+        margin-top: 210px;
+        color: #1b3b36;
+      }
+      .smallimg{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 285px;
+        height: 339px;
+        margin-left: 20px;
+        margin-top: 300px;
+      }
+      .bigimg{
+        grid-column: 3/4;
+        grid-row: 2/4;
+        width: 757px;
+        height: 1000px;
+        margin-right: 20px;
+        margin-top: 150px;
+      }
+      .superior{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 312px;
+        height: 61px;
+        font-size: 50px;
+        margin-top: 80px;
+        color: #1b3b36;
+        margin-left: 100px;
+      }
+      .superiortext{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 442px;
+        height: 168px;
+        font-size: 18px;
+        margin-top: 150px;
+        color: #1b3b36;
+        margin-left: 100px;
+      }
+      .cifers{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-top: 300px;
+        width: 118px;
+        height: 26px;
+        font-size: 22px;
+        margin-left: 100px;
+      }
+      .since2{
+        color: black;
+        font-size: 22px;
+        border-radius: 50px 50px 50px 50px;
+        border: 1px solid black;
+        width: 249px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 300px;
+        margin-left: 100px;
+      }
+      .button3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-left: 20px;
+        margin-top: 160px;
       }
     </style>
   </head>
@@ -244,6 +339,7 @@
       <!--Закончилась первая часть - шапка-->
 
       <!--Началась вторая часть первого контейнера heroscreen c текстом-->
+      <main>
       <div class="herotext">
         <div class="bankhotel">
           <div class="bank">Bank</div>
@@ -267,7 +363,7 @@
           The luxurious hotel in the most beautiful European city with an
           exclusive restaurant, conference-hall, and art-bar.
         </div>
-        <div class="button">
+        <form class="button">
           <button style="background: transparent; border: medium none">
             <img
               src="assets/imgs/buttondefault.png"
@@ -275,7 +371,7 @@
               style="width: 70px; height: 70px"
             />
           </button>
-        </div>
+        </form>
       </div>
       <!--Закончилась вторая часть первого контейнера heroscreen с текстом-->
 
@@ -336,16 +432,38 @@
         demanding guests. We offer luxurious rooms, numerous facilities, and
         exceptional service.
       </div>
-      <div class="buttonabout"><button>Button</button></div>
+      <form class="buttonabout"><button style="background: transparent; border: medium none; width: 300px; height: 300px;"><img src="assets/imgs/buttonabout.png" alt="button" style="width: 200px; height: 200px;">
+      </button></form>
     </div>
 
-    <main class="main">
-      <div class="rooms"></div>
-      <div class="facilities"></div>
+    <div class="room">
+      <div class="roomstext"><div class="rooms">Rooms</div> <div class="apartments">& apartments</div>
+        </div>
+        <div class="roomtext">All room decoration was made with ecological certified and safe materials.</div>
+        <div class="smallimg"><img src="assets/imgs/smallimg.png" alt="room"></div>
+        <div class="bigimg"><img src="assets/imgs/bigimg.png" alt="room"></div>
+        <div class="superior">Superior twin</div>
+        <div class="superiortext">The Superior twin is perfect for those who plan to stay long. The spacious and bright room is equipped with deluxe Italian furniture and has a beautiful view to the historical part of the city. Stylish interior design and comfortable beds will make your stay cozy and pleasant.</div>
+        <div class="cifers">01    /    04</div>
+        <div class="since2"><div>
+            <img
+              src="assets/imgs/star8.png"
+              alt="star"
+              style="width: 34px; height: 34px"
+            />
+          </div>
+          <div style="width: 111px; height: 26px">Since 1973</div></div>
+        <div class="button3"><button  style="background: transparent; border: medium none"><img src="assets/imgs/button3.png" alt="button" style="width: 170px; height: 170px;"></button></div>
+
+      
+      
+      
+        <div class="facilities"></div>
       <div class="bestapartments"></div>
       <div class="gallery"></div>
-    </main>
-
+    </div>
+    
+</main>
     <footer class="footer"></footer>
   </body>
 </html>

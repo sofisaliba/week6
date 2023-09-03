@@ -5,318 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/style/normalize.css" />
-
-    <style>
-      .body {
-        width: 100%;
-        background-color: #1b3b36;
-        display: grid;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-      }
-      ul li a {
-        padding: 10px 20px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fffcf6;
-        font-style: normal;
-      }
-      .menustyle {
-        display: flex;
-        flex-direction: row;
-      }
-      .menutext {
-        color: #fffcf6;
-        margin: 16px;
-      }
-      .phone {
-        color: #fffcf6;
-        margin: 16px;
-      }
-      .heroscreen {
-        background-color: #1b3b36;
-      }
-
-      .herotext {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-top: 50px;
-      }
-      .bank,
-      .hotel {
-        grid-column: 1/3;
-        grid-row: 1/2;
-        font-size: 200px;
-      }
-      .bank {
-        color: #fffcf6;
-        grid-column: 1/2;
-      }
-      .hotel {
-        color: #fcd043;
-        grid-column: 2/3;
-      }
-      .bankhotel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 880px;
-        height: 200px;
-        margin-left: 20px;
-      }
-      .choose {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        color: #fcd043;
-        width: 701px;
-        height: 31px;
-        font-size: 26px;
-        margin-left: 20px;
-        text-transform: uppercase;
-      }
-      .since {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        color: #fffcf6;
-        font-size: 22px;
-        border-radius: 50px 50px 50px 50px;
-        border: 1px solid #fffcf6;
-        width: 249px;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 300px;
-        margin-top: 70px;
-      }
-      .luxurious {
-        grid-row: 2/3;
-        grid-column: 2/3;
-        color: #fffcf6;
-        font-size: 18px;
-        width: 350px;
-        height: 84px;
-        margin-left: 300px;
-      }
-      .button {
-        grid-column: 4/5;
-        grid-row: 1/2;
-        margin-top: 70px;
-        width: 80px;
-        height: 80px;
-        margin-left: 70px;
-      }
-      .labels {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 1859px;
-        height: 76px;
-      }
-      .phone2 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 218px;
-        height: 31px;
-        color: #fcd043;
-        margin-left: 20px;
-        font-size: 26px;
-        margin-top: 40px;
-      }
-      .adress {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 403px;
-        height: 31px;
-        color: #fffcf6;
-        margin-left: 20px;
-        font-size: 26px;
-        margin-top: 70px;
-      }
-      .art {
-        grid-column: 4/5;
-        grid-row: 1/2;
-        width: 251px;
-        height: 62px;
-        color: #fffcf6;
-        margin-left: 1242px;
-        font-size: 26px;
-        word-break: break-all;
-        text-transform: uppercase;
-        margin-top: 40px;
-      }
-      .art2 {
-        margin-left: 155px;
-        text-transform: uppercase;
-      }
-      .formimage {
-        display: grid;
-        grid-template-columns: 1fr 1fr 3fr;
-        position: relative;
-      }
-      .form {
-        grid-column: 3/4;
-      }
-      .heroimage {
-        grid-column: 1/4;
-      }
-      .about {
-        margin-top: 150px;
-        display: grid;
-        grid-template-columns: 2fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-      }
-      .imgabout {
-        grid-column: 1/2;
-        grid-row: 1/3;
-        margin-top: 150px;
-      }
-      .aboutus {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 486px;
-        height: 260px;
-        font-size: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 270px;
-      }
-
-      .highquality {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        font-size: 50px;
-        width: 273px;
-        height: 60px;
-        margin-top: 240px;
-        margin-left: 100px;
-        color: #fffcf6;
-      }
-      .textaboutus {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        margin-top: 360px;
-        margin-left: 100px;
-        width: 443px;
-        height: 140px;
-        color: #fffcf6;
-      }
-      .imgabout2 {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        width: 314px;
-        height: 414px;
-        margin-top: 150px;
-      }
-      .labelloft {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        margin-left: 780px;
-        margin-top: 25px;
-      }
-      .buttonabout {
-        grid-column: 3/4;
-        grid-row: 2/3;
-        width: 200px;
-        height: 200px;
-        margin-left: 15px;
-        margin-top: 230px;
-      }
-
-      .room{
-        background-color: #fffcf6;
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr;
-      }
-      .roomstext{
-        grid-column: 1/3;
-        grid-row: 1/2;
-        width: 1036px;
-        height: 260px;
-        font-size: 150px;
-        margin-top: 150px;
-        margin-left: 20px;
-        color: #1b3b36;
-      }
-      .roomtext{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        width: 260px;
-        height: 93px;
-        font-size: 26px;
-        margin-left: 470px;
-        margin-top: 210px;
-        color: #1b3b36;
-      }
-      .smallimg{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 285px;
-        height: 339px;
-        margin-left: 20px;
-        margin-top: 300px;
-      }
-      .bigimg{
-        grid-column: 3/4;
-        grid-row: 2/4;
-        width: 757px;
-        height: 1000px;
-        margin-right: 20px;
-        margin-top: 150px;
-      }
-      .superior{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        width: 312px;
-        height: 61px;
-        font-size: 50px;
-        margin-top: 80px;
-        color: #1b3b36;
-        margin-left: 100px;
-      }
-      .superiortext{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        width: 442px;
-        height: 168px;
-        font-size: 18px;
-        margin-top: 150px;
-        color: #1b3b36;
-        margin-left: 100px;
-      }
-      .cifers{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        margin-top: 300px;
-        width: 118px;
-        height: 26px;
-        font-size: 22px;
-        margin-left: 100px;
-      }
-      .since2{
-        color: black;
-        font-size: 22px;
-        border-radius: 50px 50px 50px 50px;
-        border: 1px solid black;
-        width: 249px;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 300px;
-        margin-left: 100px;
-      }
-      .button3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        margin-left: 20px;
-        margin-top: 160px;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/style/hotel.css" />
   </head>
   <body class="body">
     <div class="heroscreen">
@@ -339,7 +28,7 @@
       <!--Закончилась первая часть - шапка-->
 
       <!--Началась вторая часть первого контейнера heroscreen c текстом-->
-      <main>
+
       <div class="herotext">
         <div class="bankhotel">
           <div class="bank">Bank</div>
@@ -373,29 +62,26 @@
           </button>
         </form>
       </div>
-      <!--Закончилась вторая часть первого контейнера heroscreen с текстом-->
+    </div>
+    <!--Закончилась вторая часть первого контейнера heroscreen с текстом-->
 
-      <!--Начало третей части с картинкой-->
+    <!--Начало третей части с картинкой-->
 
-      <div
-        class="formimage"
-        style="
-          background-image: url(assets/imgs/img.png);
-          height: 781px;
-          width: 1860px;
-          margin-left: 20px;
-          margin-right: 20px;
-        "
-      >
-        <div class="form">
-          <img
-            src="assets/imgs/form.png"
-            alt="form"
-            style="margin-left: 20px"
-          />
-        </div>
+    <div
+      class="formimage"
+      style="
+        background-image: url(assets/imgs/img.png);
+        height: 781px;
+        width: 1860px;
+        margin-left: 20px;
+        margin-right: 20px;
+      "
+    >
+      <div class="form">
+        <img src="assets/imgs/form.png" alt="form" style="margin-left: 20px" />
       </div>
     </div>
+
     <!--Конец третей части с картинкой-->
 
     <!--Начало ПОСЛЕДНЕЙ части в первом контейнере - лейблы-->
@@ -432,38 +118,145 @@
         demanding guests. We offer luxurious rooms, numerous facilities, and
         exceptional service.
       </div>
-      <form class="buttonabout"><button style="background: transparent; border: medium none; width: 300px; height: 300px;"><img src="assets/imgs/buttonabout.png" alt="button" style="width: 200px; height: 200px;">
-      </button></form>
+      <form class="buttonabout">
+        <button
+          style="
+            background: transparent;
+            border: medium none;
+            width: 300px;
+            height: 300px;
+          "
+        >
+          <img
+            src="assets/imgs/buttonabout.png"
+            alt="button"
+            style="width: 200px; height: 200px"
+          />
+        </button>
+      </form>
     </div>
 
-    <div class="room">
-      <div class="roomstext"><div class="rooms">Rooms</div> <div class="apartments">& apartments</div>
+    <div class="bigcontainer" style="background-color: #fffcf6">
+      <div class="room">
+        <div class="roomstext">
+          <div class="rooms">Rooms</div>
+          <div class="apartments">& apartments</div>
         </div>
-        <div class="roomtext">All room decoration was made with ecological certified and safe materials.</div>
-        <div class="smallimg"><img src="assets/imgs/smallimg.png" alt="room"></div>
-        <div class="bigimg"><img src="assets/imgs/bigimg.png" alt="room"></div>
+        <div class="roomtext">
+          All room decoration was made with ecological certified and safe
+          materials.
+        </div>
+        <div class="smallimg">
+          <img src="assets/imgs/smallimg.png" alt="room" />
+        </div>
+        <div class="bigimg">
+          <img src="assets/imgs/bigimg.png" alt="room" />
+        </div>
         <div class="superior">Superior twin</div>
-        <div class="superiortext">The Superior twin is perfect for those who plan to stay long. The spacious and bright room is equipped with deluxe Italian furniture and has a beautiful view to the historical part of the city. Stylish interior design and comfortable beds will make your stay cozy and pleasant.</div>
-        <div class="cifers">01    /    04</div>
-        <div class="since2"><div>
+        <div class="superiortext">
+          The Superior twin is perfect for those who plan to stay long. The
+          spacious and bright room is equipped with deluxe Italian furniture and
+          has a beautiful view to the historical part of the city. Stylish
+          interior design and comfortable beds will make your stay cozy and
+          pleasant.
+        </div>
+        <div class="cifers">01 / 04</div>
+        <div class="since2">
+          <div>
             <img
               src="assets/imgs/star8.png"
               alt="star"
               style="width: 34px; height: 34px"
             />
           </div>
-          <div style="width: 111px; height: 26px">Since 1973</div></div>
-        <div class="button3"><button  style="background: transparent; border: medium none"><img src="assets/imgs/button3.png" alt="button" style="width: 170px; height: 170px;"></button></div>
+          <div style="width: 111px; height: 26px">Since 1973</div>
+        </div>
+        <div class="button3">
+          <button style="background: transparent; border: medium none">
+            <img
+              src="assets/imgs/button3.png"
+              alt="button"
+              style="width: 170px; height: 170px"
+            />
+          </button>
+        </div>
+      </div>
 
-      
-      
-      
-        <div class="facilities"></div>
-      <div class="bestapartments"></div>
-      <div class="gallery"></div>
+      <hr style="color: #313f38; margin-left: 20px; margin-right: 20px" />
+
+      <div class="facilities">
+        <div class="name">
+          <div class="ourfaci">Our faci</div>
+          <div class="star2">
+            <img
+              src="assets/imgs/starfac.png"
+              alt="star"
+              style="width: 70.71px; height: 70.71px"
+            />
+          </div>
+          <div class="lities">lities</div>
+        </div>
+
+        <div class="congress">Art & Congress hall</div>
+        <div class="factext">
+          Bank Hotel offers you a wide range of additional services and
+          facilities. Visit our restaurant to try exclusive meals, book a
+          conference hall to organize a business meeting, or relax in the
+          art-bar.
+        </div>
+
+        <div class="factext2">
+          <div class="cifer01">01</div>
+          <div class="ice">Ice restaurant</div>
+          <div class="factext2">
+            The hotel’s exclusive infrastructure is complemented by the unique
+            atmosphere of the Safe Restaurant. Author’s menu, extensive wine
+            card, and live music will set you for the correct mood.
+          </div>
+        </div>
+
+        <div class="facimg1">
+          <img src="assets/imgs/img01.png" alt="image" />
+        </div>
+        <div class="facimg2">
+          <img src="assets/imgs/img02.png" alt="image" />
+        </div>
+        <div class="facimg3">
+          <img src="assets/imgs/img.03png.png" alt="image" />
+        </div>
+        <div class="faclabel">
+          <img src="assets/imgs/labelfacil.png" alt="label" />
+        </div>
+        <div class="facbutton">
+          <img src="assets/imgs/buttonfacil.png" alt="button" />
+        </div>
+      </div>
+
+      <div class="container3">
+        <div class="cifers02">02</div>
+        <div class="arrow-1">
+          <img src="assets/imgs/arrow.png" alt="arrow" />
+        </div>
+        <div class="halltext">Conference Hall</div>
+        <div class="hallimg">
+          <img src="assets/imgs/hallimg.png" alt="image" />
+        </div>
+        <div class="hallline"></div>
+
+        <div class="cifers03">03</div>
+        <div class="winetext">Wine bar “reserve”</div>
+        <div class="arrow-2">
+          <img src="assets/imgs/arrow.png" alt="arrow" />
+        </div>
+        <div class="wineimg">
+          <img src="assets/imgs/wineimg.png" alt="image" />
+        </div>
+      </div>
     </div>
-    
-</main>
+
+    <div class="bestapartments"></div>
+    <div class="gallery"></div>
+
     <footer class="footer"></footer>
   </body>
 </html>

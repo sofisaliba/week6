@@ -1,6 +1,8 @@
 .body {
     background-color: #1b3b36;
     display: grid;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
   header {
     display: flex;
@@ -219,6 +221,7 @@
 .bigcontainer{
     width: 1920px;
     height: 5613px;
+    box-sizing: border-box;
 }
   .room{
     background-color: #fffcf6;
@@ -314,10 +317,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr;
-    background-color: #fffcf6;
+    
     margin-top: 150px;
     height: 3000px;
-    
+    box-sizing: border-box;
+    clear: both;
   }
   .name{
     grid-column: 2/3;
@@ -453,6 +457,7 @@
     grid-column: 1/2;
     margin-left: 20px;
     grid-row: 2/3;
+    margin-top: 10px;
 }
 .cifers03{
     width: 99px;
